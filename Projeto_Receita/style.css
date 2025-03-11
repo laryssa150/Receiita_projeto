@@ -1,0 +1,51 @@
+.header-principal{
+    background-color: orangered;
+
+}
+.header-principal{
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Segoe UI',sans-serif;
+}
+.header-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-principal {
+    background-color: orangered;
+    font-size: 15px;
+    font-family: 'Segoe UI', sans-serif;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    z-index: 1;
+}
+
+.titulo-principal{
+    color: brown;
+    font-size: 20px;
+    font-family: 'Segoe UI',sans-serif;
+}
+
+.titulo-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-receitas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-receitas{
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.titulo-receita{
+    color: brown;
+}
