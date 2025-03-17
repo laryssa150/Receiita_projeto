@@ -1,9 +1,9 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Link para o ícone -->
     <title>Receitas</title>
 </head>
 <body>
@@ -11,38 +11,144 @@
         <h1>
             Sabores da <span>casa</span>
         </h1>
-        <p>Descubra receitas deliciosas e faceis de preparar em casa</p>
-        
+        <p>Descubra receitas deliciosas e fáceis de preparar em casa</p>
+        <div class="icon-home">
+            <a href='/'><i class="fa-solid fa-house"></i></a>
+        </div>
     </header>
-    <main> <!--Corpo (conteúdo geral) da página-->
-    <h1 class="titulo-principal">
-        Receitas em Destaque
-    </h1>
-    <div class="main-receitas">
-    <div class="Produtos">
-        <h3 class="titulo-receita">Risoto de Cogumelos</h3>
-        <p> Um cremoso risoto italiano com cogumelos frescos e queijo parmesão</p>
-    </div>
-    <div class="Produtos">
-        <h3 class="titulo-receita">Frango assado com ervas</h3>
-        <p>frango suculento assado com ervas frescas e limão</p>
-    </div>
-    <div class="Produtos">
-        <h3 class="titulo-receita">Salada Caprese</h3>
-        <p>Salada italiana classica com tomate, mozzarella e manjerição</p>
-    </div>
-    <div class="Produtos">
-        <h3 class="titulo-receita">Lasanha a bolonhesa</h3>
-        <p>Camada de massa,molho de carne e queijo derretido</p>
-    </div>
-    <div class="Produtos">
-        <h3 class="titulo-receita">Bolo de cenoura</h3>
-        <p>Bolo macio de cenoura com cobertura de chocolate</p>
-    </div>
-    <div class="Produtos">
-        <h3 class="titulo-receita">Moqueca de peixe</h3>
-        <p>Prato brasileiro tradicional com peixe, leite de coco e deide</p>
-    </div>
+
+    <main> <!-- Corpo da página -->
+        <div class="titulo-principal-container">
+            <h1 class="titulo-principal">Receitas em Destaque</h1>
+        </div>
+
+        <div class="main-receitas">
+            <div class="Produtos">
+                <div class="titulo-receita-container">
+                    <a href='/ingredientesrisoto'><h3 class="titulo-receita">Risoto de Cogumelos</h3></a>
+                </div>
+                <div class="descricao-receita-container">
+                    <p>Um cremoso risoto italiano com cogumelos frescos e queijo parmesão</p>
+                </div>
+                <div class="imagem-receita-container">
+                    <img src="./imagens/Risoto-de-Cogumelos.webp" alt="Risoto de Cogumelos">
+                </div>
+                <div class="icone">
+                    <i class="fa-solid fa-clock"></i>
+                    <p>30 minutos</p>
+                    <i class="fa-solid fa-hat-chef"></i>
+                    <p>médio</p>
+                    <i class="fa-solid fa-bowl-food"></i>
+                    <p>4 porções</p>
+                </div>
+            </div>
+
+            <div class="Produtos">
+                <div class="titulo-receita-container">
+                    <a href='/ingredientesfrangoassado'><h3 class="titulo-receita">Frango assado com ervas</h3></a>
+                </div>
+                <div class="descricao-receita-container">
+                    <p>Frango suculento assado com ervas frescas e limão</p>
+                </div>
+                <div class="imagem-receita-container">
+                    <img src="./imagens/frango-assado-com-ervas.webp" alt="Frango assado com ervas">
+                </div>
+                <div class="icone">
+                    <i class="fa-solid fa-clock"></i>
+                    <p>60 minutos</p>
+                    <i class="fa-solid fa-hat-chef"></i>
+                    <p>fácil</p>
+                    <i class="fa-solid fa-bowl-food"></i>
+                    <p>6 porções</p>
+                </div>
+            </div>
+
+            <div class="Produtos">
+                <div class="titulo-receita-container">
+                    <a href='/ingredientessalada'><h3 class="titulo-receita">Salada Caprese</h3></a>
+                </div>
+                <div class="descricao-receita-container">
+                    <p>Salada italiana clássica com tomate, mozzarella e manjericão</p>
+                </div>
+                <div class="imagem-receita-container">
+                    <img src="./imagens/salada-caprese.webp" alt="Salada Caprese">
+                </div>
+                <div class="icone">
+                    <i class="fa-solid fa-clock"></i>
+                    <p>15 minutos</p>
+                    <i class="fa-solid fa-hat-chef"></i>
+                    <p>fácil</p>
+                    <i class="fa-solid fa-bowl-food"></i>
+                    <p>2 porções</p>
+                </div>
+            </div>
+
+            <div class="Produtos">
+                <div class="titulo-receita-container">
+                    <a href='/ingredienteslasanha'><h3 class="titulo-receita">Lasanha a bolonhesa</h3></a>
+                </div>
+                <div class="descricao-receita-container">
+                    <p>Camada de massa, molho de carne e queijo derretido</p>
+                </div>
+                <div class="imagem-receita-container">
+                    <img src="./imagens/lasanha-bolonhesa.jpg" alt="Lasanha a bolonhesa">
+                </div>
+                <div class="icone">
+                    <i class="fa-solid fa-clock"></i>
+                    <p>30 minutos</p>
+                    <i class="fa-solid fa-hat-chef"></i>
+                    <p>médio</p>
+                    <i class="fa-solid fa-bowl-food"></i>
+                    <p>4 porções</p>
+                </div>
+            </div>
+
+            <div class="Produtos">
+                <div class="titulo-receita-container">
+                    <a href='/ingredientesbolodecenoura'><h3 class="titulo-receita">Bolo de cenoura</h3></a>
+                </div>
+                <div class="descricao-receita-container">
+                    <p>Bolo macio de cenoura com cobertura de chocolate</p>
+                </div>
+                <div class="imagem-receita-container">
+                    <img src="./imagens/bolo-de-cenoura.jpg" alt="Bolo de cenoura">
+                </div>
+                <div class="icone">
+                    <i class="fa-solid fa-clock"></i>
+                    <p>60 minutos</p>
+                    <i class="fa-solid fa-hat-chef"></i>
+                    <p>fácil</p>
+                    <i class="fa-solid fa-bowl-food"></i>
+                    <p>6 porções</p>
+                </div>
+            </div>
+
+            <div class="Produtos">
+                <div class="titulo-receita-container">
+                    <a href='/ingredientesmoquecadepeixe'><h3 class="titulo-receita">Moqueca de peixe</h3></a>
+                </div>
+                <div class="descricao-receita-container">
+                    <p>Prato brasileiro tradicional com peixe, leite de coco e dendê</p>
+                </div>
+                <div class="imagem-receita-container">
+                    <img src="./imagens/moqueca-de-peixe.jpg" alt="Moqueca de peixe">
+                </div>
+                <div class="icone">
+                    <i class="fa-solid fa-clock"></i>
+                    <p>15 minutos</p>
+                    <i class="fa-solid fa-hat-chef"></i>
+                    <p>fácil</p>
+                    <i class="fa-solid fa-bowl-food"></i>
+                    <p>2 porções</p>
+                </div>
+            </div>
+        </div>
     </main>
+
+    <footer class="footer-principal">
+        <p class="footer-logo">Sabores da Casa</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
