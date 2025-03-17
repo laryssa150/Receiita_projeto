@@ -1,20 +1,8 @@
-.header-principal{
-    background-color: orangered;
-
-}
-.header-principal{
-    color: #ffffff;
-    font-size: 20px;
-    font-family: 'Segoe UI',sans-serif;
-}
-.header-principal{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .header-principal {
     background-color: orangered;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
     font-size: 15px;
     font-family: 'Segoe UI', sans-serif;
     position: relative;
@@ -24,28 +12,226 @@
     gap: 20px;
     z-index: 1;
 }
-
-.titulo-principal{
-    color: brown;
-    font-size: 20px;
-    font-family: 'Segoe UI',sans-serif;
+.header-principal h1{
+    text-align: center;
 }
 
-.titulo-principal{
+.header-principal p{
+    text-align: center;
+}
+
+.titulo-principal {
+    color: brown;
+    font-size: 20px;
+    font-family: 'Segoe UI', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.main-receitas{
+.main-receitas {
     display: flex;
     justify-content: space-between;
+    font-family: 'Segoe UI', sans-serif;
+    gap: 20px;
 }
 
-.main-receitas{
+.titulo-receita {
+    color: brown;
+    letter-spacing: 1px; /* Adiciona 1px de espaçamento entre as letras */
+}
+
+.imagem-receita-container img {
+    border-radius: 10px; /* Bordas arredondadas */
+    background-color: white; /* Fundo branco */
+    padding: 10px; /* Espaço entre a imagem e o fundo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve para destaque */
+    width: 100%; /* Ajusta a largura da imagem ao contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.Produtos {
+    border: 1px solid #ccc; /* Adiciona uma borda ao redor das informações */
+    padding: 20px; /* Adiciona espaçamento interno */
+    margin-bottom: 20px; /* Adiciona espaçamento entre os produtos */
+    border-radius: 10px; /* Bordas arredondadas */
+    background-color: #fff; /* Fundo branco */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve para destaque */
+}
+
+.icone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 15px;
+}
+
+.icone i.fa-clock {
+    color: black;
+}
+
+.icone i.fa-hat-chef {
+    color: lightgray;
+}
+
+.icone i.fa-bowl-food {
+    color: lightgray;
+}
+
+.fixed-images-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff; /* Fundo branco */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Sombra leve para destaque */
+}
+
+.fixed-images-container img {
+    width: 33%; /* Ajusta a largura das imagens */
+    height: auto; /* Mantém a proporção das imagens */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+.footer-principal {
+    background-color: brown;
+    border-radius: 10px;
+    padding: 20px;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-logo {
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 12px;
+    margin: 0;
+    width: 100%;
+}
+
+.conteudo-receita {
+    justify-content: space-between;
+    padding: 20px;
     font-family: 'Segoe UI', sans-serif;
 }
 
-.titulo-receita{
+.conteudo-receita .ingredientes, .conteudo-receita .modo-preparo {
+    width: 45%;
+}
+
+.conteudo-receita h2 {
     color: brown;
+}
+
+.conteudo-receita ul, .conteudo-receita ol {
+    margin-left: 20px;
+}
+
+.navegacao-receita {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.navegacao-receita a {
+    color: orangered;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.navegacao-receita a:hover {
+    text-decoration: underline;
+}
+
+.icon-home {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.icon-home a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.icon-home a:hover {
+    color: lightgray;
+}
+
+.class{
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+
+
+}
+
+@media (max-width: 768px) {
+    .main-receitas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Produtos {
+        flex: 1 1 100%; /* Ajusta a largura dos produtos para 1 por linha */
+        margin-bottom: 20px;
+    }
+
+    .conteudo-receita {
+        flex-direction: column;
+    }
+
+    .conteudo-receita .ingredientes, .conteudo-receita .modo-preparo {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .icon-home {
+        position: static;
+        margin-top: 20px;
+    }
+
+    .icon-home a {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-principal {
+        padding: 10px;
+    }
+
+    .titulo-principal {
+        font-size: 18px;
+    }
+
+    .Produtos {
+        padding: 10px;
+    }
+
+    .icone {
+        font-size: 12px;
+    }
+
+    .footer-principal {
+        padding: 10px;
+    }
+
+    .footer-logo {
+        font-size: 10px;
+    }
+
+    .class {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
 }
